@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext", "moduleResolution": "bundler", "jsx": "react-jsx",
+    "strict": true, "skipLibCheck": true, "noEmit": true,
+    "esModuleInterop": true, "allowImportingTsExtensions": true,
+    "types": ["vite/client", "node"],
+    "paths": {
+      "@/*": ["./src/*"],
+      "next/navigation": ["./src/studio/navigation.ts"],
+      "next/link": ["./src/studio/link.tsx"],
+      "next/image": ["./src/studio/image.tsx"]
+    }
+  },
+  "files": ["src/studio-main.tsx", "src/types/soundtouchjs.d.ts", "src/types/eyedropper.d.ts"]
+}
