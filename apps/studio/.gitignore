@@ -1,0 +1,19 @@
+# Installed dependencies and generated application packages.
+/node_modules/
+/dist/
+/release/
+
+# Generated test reports, captures and disposable browser profiles.
+/test-results/
+/playwright-report/
+/blob-report/
+/coverage/
+/desktop-evidence/
+/test-evidence/
+/tests/evidence/
+/tests/.artifacts/
+/.studio-test-profile*/
+/.test-profile*/
+/*.log
+
+# Keep bun.lock, package metadata, source, fixtures and provenance tracked.
