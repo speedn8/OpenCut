@@ -23,6 +23,8 @@ Local transcription requires FFmpeg's `whisper` filter and a GGML model. Configu
 
 `npm run model:acquire` explicitly downloads the pinned optional 78 MB model, verifies both byte count and SHA-256, and stages its notices for packaging. Application startup makes no model download or cloud request.
 
+The confirmed AI processing model is **local by default, optional cloud providers**. A missing local model never triggers an automatic upload. Real cloud adapters remain future work and require an explicitly selected provider/operation. See `specs/modern-editor/AI-PROCESSING.md` for the behavior and acceptance gates.
+
 ```powershell
 npm run package:windows
 ```
