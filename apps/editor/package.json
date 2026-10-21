@@ -1,0 +1,27 @@
+{
+  "name": "@opencut-next/editor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Freshly authored local-first extensible desktop video editor",
+  "author": "OpenCut Next contributors",
+  "license": "MIT",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "build": {
+    "appId": "net.opencut.next.editor",
+    "productName": "OpenCut Next",
+    "electronVersion": "44.9.2",
+    "electronDist": "../../node_modules/electron/dist",
+    "directories": {"output": "release"},
+    "files": ["dist/**/*", "electron/**/*.cjs", "!electron/tests/**/*", "!**/*.map", "package.json", "THIRD-PARTY-NOTICES.txt"],
+    "extraResources": [{"from": "resources/models", "to": "models", "filter": ["**/*"]}],
+    "asar": true,
+    "npmRebuild": false,
+    "win": {"target": "portable", "signAndEditExecutable": false},
+    "artifactName": "OpenCut-Next-${version}-Windows.${ext}"
+  }
+}

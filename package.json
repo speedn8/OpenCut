@@ -1,0 +1,26 @@
+{
+  "name": "opencut-next-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": ["apps/editor", "packages/editor-core"],
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "typecheck": "tsc --noEmit -p apps/editor/tsconfig.json",
+    "model:acquire": "node tools/acquire-model.mjs",
+    "test:native": "node --test apps/editor/electron/tests/native.test.cjs apps/editor/electron/tests/codecs.test.cjs",
+    "desktop": "electron apps/editor",
+    "package:windows": "npm run build && electron-builder --projectDir apps/editor --win portable --x64"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "electron": "44.9.2",
+    "electron-builder": "26.15.3",
+    "esbuild": "0.28.2",
+    "typescript": "7.0.2",
+    "vite": "8.3.4"
+  }
+}
