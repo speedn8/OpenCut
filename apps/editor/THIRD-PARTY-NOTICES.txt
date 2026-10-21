@@ -1,0 +1,7 @@
+OpenCut Next freshly authored editor implementation is distributed under the repository MIT license.
+
+The desktop runtime includes Electron and Chromium and their required third-party licenses, provided alongside the application in the runtime distribution. React and React DOM are MIT licensed; their license notices are retained by the bundle/build dependency metadata. Full dependency licenses are recorded in package-lock.json and the source package's third-party notices.
+
+FFmpeg and ffprobe are separately installed media dependencies, not bundled into this preview binary. Their license depends on their build configuration. The tested local GPL build is N-121583-g4348bde2d2-20251031. No copy of CapCut's media binaries, models, assets or implementation is incorporated.
+
+Local transcription requires a separately configured whisper.cpp GGML model and an FFmpeg build exposing the whisper filter. The optional tested tiny.en weights originate from OpenAI Whisper (MIT), converted and published by whisper.cpp. Model provenance and complete MIT text are supplied in the source package/specifications.

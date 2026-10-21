@@ -1,0 +1,17 @@
+{
+  "purpose": "Optional local source-audio transcription; no user media is transmitted",
+  "name": "Whisper tiny.en GGML",
+  "language": "English",
+  "weightsOrigin": "https://github.com/openai/whisper",
+  "conversionOrigin": "https://github.com/ggml-org/whisper.cpp/blob/master/models/README.md",
+  "download": "https://huggingface.co/ggerganov/whisper.cpp/resolve/5359861c739e955e79d9a303bcbc70fb988958b1/ggml-tiny.en.bin",
+  "repositoryRevision": "5359861c739e955e79d9a303bcbc70fb988958b1",
+  "filename": "ggml-tiny.en.bin",
+  "bytes": 77704715,
+  "sha256": "921e4cf8686fdd993dcd081a5da5b6c365bfde1162e72b08d75ac75289920b1f",
+  "verifiedUtcDate": "2026-10-20",
+  "license": "MIT",
+  "licenseText": "licenses/Whisper-MIT.txt",
+  "runtime": "Separately installed FFmpeg whisper filter, CPU processing initially",
+  "limitations": ["English-only model", "Recognition accuracy requires reviewing captions", "No diarization, translation or word timing claim", "Model is not part of source Git history"]
+}

@@ -8,3 +8,10 @@ docs/
 
 # moon runtime cache
 .moon/cache/
+
+# Generated fresh editor artifacts and separately acquired MIT model weights
+apps/editor/release/
+apps/editor/electron/core.cjs
+apps/editor/electron/core.cjs.map
+apps/editor/resources/models/*.bin
+qa-artifacts/
